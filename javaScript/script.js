@@ -9,11 +9,13 @@ form.addEventListener('submit', (e) => {
 
   if (email.value === "" || email.value == null) {
     errorD.style.display = "block";
+    email.style.borderColor = "red";
     msgs.push("Email can't be empty");
   }
 
   if (!email.value.match(regex) && email.value !== "" && email.value != null) {
     errorD.style.display = "block";
+    email.style.borderColor = "red";
     msgs.push("Please provide a valid email address");
   }
 
