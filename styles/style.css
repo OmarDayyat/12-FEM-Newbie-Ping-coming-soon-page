@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+/*==============
+   General
+  ==============*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+h1 {
+  color: #969696;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  color: #151f29;
+}
+
+p {
+  font-weight: 300;
+  color: #151f29;
+  margin-bottom: 40px;
+}
+
+/*================
+   Main Container
+  ================*/
+.main-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  padding: 40px 0;
+}
+
+.grid-col-2 {
+  text-align: center;
+}
+
+/*================
+   Logo Container
+  ================*/
+.logo-container {
+  margin-bottom: 40px;
+}
+
+/*================
+   Form Container
+  ================*/
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+input {
+  width: 55%;
+  outline: none;
+  border-radius: 50px;
+  border: 2px solid gray;
+  padding: 15px 20px;
+  margin-right: 10px;
+}
+
+input::-webkit-input-placeholder {
+  opacity: 0.3;
+}
+
+input:-ms-input-placeholder {
+  opacity: 0.3;
+}
+
+input::-ms-input-placeholder {
+  opacity: 0.3;
+}
+
+input::placeholder {
+  opacity: 0.3;
+}
+
+.form-btn {
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 15px 40px;
+  border: 0px;
+  color: white;
+  background-color: #4f7df3;
+}
+
+.form-btn:hover {
+  background-color: #c2d3ff;
+}
+
+.error-msg-desktop {
+  display: none;
+  position: absolute;
+  font-size: 0.6rem;
+  color: #ff5263;
+  top: 110%;
+  left: 15%;
+}
+
+.main-image {
+  width: 75%;
+  margin-bottom: 40px;
+}
+
+/*================
+   Socail Media
+  ================*/
+.social-media {
+  margin-bottom: 50px;
+}
+
+.icon {
+  cursor: pointer;
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 50px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  margin-right: 10px;
+  color: #4f7df3;
+}
+
+.icon:hover {
+  background-color: #4f7df3;
+  color: white;
+}
+
+.fb {
+  padding: 10px 13px;
+}
+
+.copyright {
+  font-size: 0.7rem;
+  color: #969696;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+/*==============
+  Attribution
+  ==============*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*=========================================================
+                          Media
+===========================================================*/
+@media only screen and (max-width: 1024px) {
+  /*==============
+   General
+  ==============*/
+  h1 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  /*================
+     Main Container
+    ================*/
+  .main-container {
+    -ms-grid-columns: 1fr 8fr 1fr;
+        grid-template-columns: 1fr 8fr 1fr;
+  }
+  /*================
+     Logo Container
+    ================*/
+  .logo-container {
+    margin-bottom: 40px;
+  }
+  /*================
+     Form Container
+    ================*/
+  .form-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+  }
+  input {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .error-msg-desktop {
+    position: relative;
+    font-size: 0.6rem;
+    left: 0;
+    right: 0;
+  }
+  .main-image {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  /*================
+     Socail Media
+    ================*/
+  .fb {
+    padding: 10px 13px;
+  }
+  .copyright {
+    font-size: 0.6rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

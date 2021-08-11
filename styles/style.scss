@@ -1,0 +1,227 @@
+@import "_variables.scss";
+
+/*==============
+   General
+  ==============*/
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  font-size: 20px;
+  font-family: $font;
+}
+
+h1{
+  color: $Gray;
+  font-weight: 300;
+  margin-bottom: 20px;
+  span{
+    color: $Very-Dark-Blue;
+  }
+}
+
+p{
+  font-weight: 300;
+  color: $Very-Dark-Blue;
+  margin-bottom: 40px;
+}
+
+/*================
+   Main Container
+  ================*/
+
+.main-container{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  padding: 40px 0;
+}
+
+.grid-col-2{
+  text-align: center;
+}
+
+/*================
+   Logo Container
+  ================*/
+
+.logo-container{
+  margin-bottom: 40px;
+}
+
+/*================
+   Form Container
+  ================*/
+
+.form-container{
+display: flex;
+justify-content: center;
+margin-bottom: 80px;
+position: relative;
+
+}
+
+input{
+  width: 55%;
+  outline: none;
+  border-radius: 50px;
+  border: 2px solid gray;
+  padding: 15px 20px;
+  margin-right: 10px;
+  &::placeholder{
+    opacity: 0.3;
+  }
+}
+
+.form-btn{
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 15px 40px;
+  border: 0px;
+  color: white;
+  background-color: $Blue;
+  &:hover{
+    background-color: $Pale-Blue;
+  }
+}
+
+.error-msg-desktop{
+  display: none;
+  position: absolute;
+  font-size: 0.6rem;
+  color: $Light-Red;
+  top: 110%;
+  left: 15%;
+}
+
+.main-image{
+  width: 75%;
+  margin-bottom: 40px;
+}
+
+/*================
+   Socail Media
+  ================*/
+
+.social-media{
+  margin-bottom: 50px;
+}
+
+.icon{
+  cursor: pointer;
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 50px;
+  border: 1px solid hsla(0, 0%, 50%,0.3);
+  margin-right: 10px;
+  color: $Blue;
+  &:hover{
+    background-color: $Blue;
+    color: white;
+  }
+}
+
+.fb{
+  padding: 10px 13px;
+}
+
+.copyright{
+  font-size: 0.7rem;
+  color: $Gray;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+/*==============
+  Attribution
+  ==============*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 10px;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+/*=========================================================
+                          Media
+===========================================================*/
+
+@media only screen and (max-width:1024px){
+
+  /*==============
+   General
+  ==============*/
+
+  h1{
+    font-size: 1.3rem;
+  }
+
+  p{
+    font-size: 0.8rem;
+  }
+
+  /*================
+     Main Container
+    ================*/
+
+  .main-container{
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+
+  /*================
+     Logo Container
+    ================*/
+
+  .logo-container{
+    margin-bottom: 40px;
+  }
+
+  /*================
+     Form Container
+    ================*/
+
+  .form-container{
+  flex-direction: column;
+  margin-bottom: 40px;
+  }
+
+  input{
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+
+  .error-msg-desktop{
+    position: relative;
+    font-size: 0.6rem;
+    left: 0;
+    right: 0;
+  }
+
+
+  .main-image{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  /*================
+     Socail Media
+    ================*/
+
+
+  .fb{
+    padding: 10px 13px;
+  }
+
+  .copyright{
+    font-size: 0.6rem;
+  }
+
+}
